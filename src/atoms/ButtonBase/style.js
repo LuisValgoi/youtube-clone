@@ -33,5 +33,5 @@ export const StyledIconArea = styled.div`
 
 export const StyledSpan = styled.span`
   color: ${Colors.BUTTON_COLOR_WHITE};
-  margin-left: 1rem;
+  margin-left: 1.4rem;
 `;

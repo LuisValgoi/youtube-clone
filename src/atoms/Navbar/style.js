@@ -11,4 +11,5 @@ export const StyledNavbar = styled.div`
   background-color: ${Colors.NAVBAR_BACKGROUND};
   flex-direction: row;
   align-items: center;
+  align-content: center;
 `;
