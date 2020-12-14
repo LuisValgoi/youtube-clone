@@ -1,7 +1,19 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
-import { StyledApp } from "./style";
+import Routes from "../../routes";
+import Header from "../../molecules/Header";
+import Sidebar from "../../molecules/Sidebar";
+import ContentArea from "../../atoms/ContentArea";
 
 export default function App() {
-  return <StyledApp>App</StyledApp>;
+  return (
+    <BrowserRouter>
+      <Header />
+      <Sidebar />
+      <ContentArea>
+        <Routes />
+      </ContentArea>
+    </BrowserRouter>
+  );
 }
