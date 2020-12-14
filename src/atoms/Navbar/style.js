@@ -9,7 +9,7 @@ export const StyledNavbar = styled.div`
   width: 100%;
   z-index: 1;
   background-color: ${Colors.NAVBAR_BACKGROUND};
+  display: flex;
   flex-direction: row;
   align-items: center;
-  align-content: center;
 `;

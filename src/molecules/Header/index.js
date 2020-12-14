@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <NavBar id="navbar">
       <Button id="navbar-sidebar" icon="bars" />
-      <Logo href="/" id="navbar-logo" src="/images/logo.png" />
+      <Logo id="navbar-logo" href="/" src="/images/logo.png" />
     </NavBar>
   );
 }

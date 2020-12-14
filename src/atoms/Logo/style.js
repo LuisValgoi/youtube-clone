@@ -1,13 +1,7 @@
 import styled from "styled-components";
 
-export const StyledLogoArea = styled.a`
-  position: relative;
-  text-align: center;
-  margin: 0 auto;
-`;
-
 export const StyledLogo = styled.img`
-  max-width: 4rem;
+  max-width: 5rem;
   cursor: pointer;
 
   &:hover {

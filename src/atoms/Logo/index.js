@@ -1,11 +1,11 @@
 import React from "react";
 
-import { StyledLogo, StyledLogoArea } from "./style";
+import { StyledLogo } from "./style";
 
 export default function Logo(props) {
   return (
-    <StyledLogoArea href={props.href}>
+    <a href={props.href}>
       <StyledLogo {...props}>{props.children}</StyledLogo>
-    </StyledLogoArea>
+    </a>
   );
 }
