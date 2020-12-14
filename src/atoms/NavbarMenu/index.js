@@ -3,8 +3,8 @@ import { StyledNavbarMenu } from "./style";
 
 export default function NavbarMenu(props) {
   return (
-    <StyledNavbarMenu id="nav-bar-menu-button" {...props}>
-      {props.children}
+    <StyledNavbarMenu id="navbar-menu" {...props}>
+      <i class="fas fa-bars"></i>
     </StyledNavbarMenu>
   );
 }

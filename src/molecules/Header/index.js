@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <NavBar>
       <NavbarMenu />
-      <SearchBar />
+      {/* <SearchBar /> */}
     </NavBar>
   );
 }
