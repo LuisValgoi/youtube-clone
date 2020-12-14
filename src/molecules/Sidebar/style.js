@@ -15,3 +15,8 @@ export const StyledSidebarList = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export const StyledSidebarDivisor = styled.hr`
+  width: 80%;
+  border-color: ${Colors.SIDEBAR_HR};
+`;

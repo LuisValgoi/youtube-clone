@@ -26,6 +26,11 @@ export const StyledWrapper = styled.div`
   padding: 0.5rem 1rem 0.5rem 1rem;
 `;
 
+export const StyledIconArea = styled.div`
+  min-width: 1rem;
+  max-width: 1rem;
+`;
+
 export const StyledSpan = styled.span`
   color: ${Colors.BUTTON_COLOR_WHITE};
   margin-left: 1rem;
