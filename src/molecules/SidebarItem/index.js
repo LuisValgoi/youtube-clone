@@ -11,16 +11,24 @@ export default function SidebarItem(props) {
             <i id={`${props.id}-wrapper-icon`} className={`fas fa-${props.icon}`}></i>
           </StyledIconArea>
         )}
-        {props.avatar && <StyledAvatar id={`${props.id}-avatar`} src={props.avatar} alt={props.text} />}
+
+        {props.avatar && (
+          <>
+            <StyledAvatar id={`${props.id}-avatar`} src={props.avatar} alt={props.text} />
+          </>
+        )}
+
         <StyledText id={`${props.id}-text`}>{props.text}</StyledText>
+
         {props.live && (
           <StyledLiveArea id={`${props.id}-live`}>
-            <i className="fas fa-satellite-dish"></i>
+            <i id={`${props.id}-wrapper-live`} className="fas fa-satellite-dish"></i>
           </StyledLiveArea>
         )}
+
         {!props.live && props.news && (
           <StyledNewsArea id={`${props.id}-news`}>
-            <i className="fas fa-circle"></i>
+            <i id={`${props.id}-wrapper-news`} className="fas fa-circle"></i>
           </StyledNewsArea>
         )}
       </StyledButton>

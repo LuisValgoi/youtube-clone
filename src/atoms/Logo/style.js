@@ -5,7 +5,7 @@ export const StyledLogo = styled.img`
   cursor: pointer;
 
   &:hover {
-    transform: translateY(-5px);
+    transform: scale(1.1);
     transition: all 0.2s;
   }
 `;
