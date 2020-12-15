@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import * as api from "../../services/sidebar";
-import SidebarItem from "../../atoms/SidebarItem";
+import SidebarItem from "../../molecules/SidebarItem";
 import { StyledSideBar, StyledSidebarList, StyledSidebarDivisor, StyledSidebarGroupTitle } from "./style";
-import SubscriptionItem from "../../atoms/SubscriptionItem";
 
 export default function Sidebar(props) {
   const [sidebarItems, setSidebarItems] = useState([]);
@@ -44,10 +43,10 @@ export default function Sidebar(props) {
 
         <StyledSidebarGroupTitle>Inscrições</StyledSidebarGroupTitle>
         {(!subscriptions || subscriptions.length === 0) && <SidebarItem key={3} id={`sidebar-subscription-spinner`} text="Loading..." icon="spinner" />}
-        {/* {subscriptions.length > 0 &&
+        {subscriptions.length > 0 &&
           subscriptions.map((item) => {
-            return <SubscriptionItem key={item.id} id={`sidebar-subscription-item-${item.id}`} text={item.text} avatar={item.avatar} />;
-          })} */}
+            return <SidebarItem key={item.id} id={`sidebar-subscription-${item.id}`} text={item.text} avatar={item.avatar} live={item.live} news={item.news} />;
+          })}
       </StyledSidebarList>
     </StyledSideBar>
   );

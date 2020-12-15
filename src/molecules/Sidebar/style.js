@@ -14,6 +14,8 @@ export const StyledSideBar = styled.div`
 export const StyledSidebarList = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100%;
+  overflow-x: scroll;
 `;
 
 export const StyledSidebarDivisor = styled.hr`
