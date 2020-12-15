@@ -33,6 +33,7 @@ export const StyledAvatar = styled.img`
 export const StyledIconArea = styled.div`
   min-width: 1rem;
   max-width: 1rem;
+  color: ${Colors.BUTTON_COLOR_GREY};
 `;
 
 export const StyledText = styled.span`
