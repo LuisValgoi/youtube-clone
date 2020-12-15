@@ -3,19 +3,19 @@ import styled from "styled-components";
 import * as Colors from "../../styles/Colors";
 
 export const StyledSideBar = styled.div`
-  height: 100%;
+  height: calc(100% - 50px);
   position: fixed;
   top: 50px;
   background-color: ${Colors.SIDEBAR_BACKGROUND};
   width: 300px;
   z-index: 1;
+  overflow-x: scroll;
 `;
 
 export const StyledSidebarList = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
-  overflow-x: scroll;
+  height: auto;
 `;
 
 export const StyledSidebarDivisor = styled.hr`

@@ -101,6 +101,27 @@ const SIDEBAR_SUBSCRIPTIONS = [
     live: false,
     news: true,
   },
+  {
+    id: "devpleno",
+    text: "Dev Pleno",
+    avatar: "https://yt3.ggpht.com/ytc/AAUvwnhHD5ZZRbN1_BoTEcszRhrGhZjtuSdgA6SEhV70CA=s88-c-k-c0x00ffffff-no-rj",
+    live: false,
+    news: true,
+  },
+  {
+    id: "jovemnerd",
+    text: "Jovem Nerd",
+    avatar: "https://yt3.ggpht.com/ytc/AAUvwnhplqeAtqHJ2MlBTFJkZ1jepRFtTdwoY7PQPQdH=s88-c-k-c0x00ffffff-no-rj",
+    live: false,
+    news: true,
+  },
+  {
+    id: "celke",
+    text: "Celke",
+    avatar: "https://yt3.ggpht.com/ytc/AAUvwngFb9zi9pF7_cVPudPvwVbiXw6lwSqmAIAKtud9=s88-c-k-c0x00ffffff-no-rj",
+    live: false,
+    news: true,
+  },
 ];
 
 export function getSidebarItems() {
