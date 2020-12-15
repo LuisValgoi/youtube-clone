@@ -1,15 +1,13 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import Routes from "../../routes";
+import { routes } from "../../routes";
 import AppTemplate from "../../templates/App";
 
 export default function App() {
   return (
     <BrowserRouter>
-      <AppTemplate>
-        <Routes />
-      </AppTemplate>
+      <AppTemplate>{routes}</AppTemplate>
     </BrowserRouter>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Subscription() {
-  return <div>Subscription</div>;
+  return <div style={{ color: "white" }}>Subscription</div>;
 }
