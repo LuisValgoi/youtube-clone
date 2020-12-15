@@ -3,7 +3,7 @@ import styled from "styled-components";
 import * as Colors from "../../styles/Colors";
 
 export const StyledNavbar = styled.div`
-  height: 50px;
+  height: 70px;
   position: fixed;
   top: 0;
   width: 100%;

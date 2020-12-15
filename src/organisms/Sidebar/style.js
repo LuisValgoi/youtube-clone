@@ -3,9 +3,9 @@ import styled from "styled-components";
 import * as Colors from "../../styles/Colors";
 
 export const StyledSideBar = styled.div`
-  height: calc(100% - 50px);
+  height: calc(100% - 70px);
   position: fixed;
-  top: 50px;
+  top: 70px;
   background-color: ${Colors.SIDEBAR_BACKGROUND};
   width: 300px;
   z-index: 1;

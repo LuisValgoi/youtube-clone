@@ -7,7 +7,7 @@ export const StyledContent = styled.div`
   max-width: 100%;
   position: relative;
   margin-left: 300px;
-  top: 50px;
+  top: 70px;
   background-color: ${Colors.CONTENT_AREA_BACKGROUND};
 `;
 
