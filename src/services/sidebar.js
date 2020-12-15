@@ -1,4 +1,4 @@
-const SIDEBAR_ITEMS_GROUP_1 = [
+const SIDEBAR_ITEMS_SECTION_1 = [
   {
     id: "home",
     text: "Início",
@@ -16,7 +16,7 @@ const SIDEBAR_ITEMS_GROUP_1 = [
   },
 ];
 
-const SIDEBAR_ITEMS_GROUP_2 = [
+const SIDEBAR_ITEMS_SECTION_2 = [
   {
     id: "lib",
     text: "Biblioteca",
@@ -42,6 +42,76 @@ const SIDEBAR_ITEMS_GROUP_2 = [
     text: "Vídeos que Gostei",
     icon: "thumbs-up",
   },
+];
+
+const SIDEBAR_ITEMS_SECTION_3 = [
+  {
+    id: "youtubepremium",
+    text: "Youtube Premium",
+    icon: "crown",
+  },
+  {
+    id: "movies",
+    text: "Filmes",
+    icon: "film",
+  },
+  {
+    id: "games",
+    text: "Jogos",
+    icon: "gamepad",
+  },
+  {
+    id: "live",
+    text: "Ao vivo",
+    icon: "satellite-dish",
+  },
+  {
+    id: "learn",
+    text: "Aprender",
+    icon: "lightbulb",
+  },
+];
+
+const SIDEBAR_ITEMS_SECTION_4 = [
+  {
+    id: "settings",
+    text: "Configurações",
+    icon: "cog",
+  },
+  {
+    id: "complaint",
+    text: "Histórico de Denúncias",
+    icon: "flag",
+  },
+  {
+    id: "help",
+    text: "Ajuda",
+    icon: "question-circle",
+  },
+  {
+    id: "feedback",
+    text: "Enviar feedback",
+    icon: "comment-alt",
+  },
+];
+
+const SIDEBAR_ITEMS_SECTION_5 = [
+  { text: "Sobre", to: "/about" },
+  { text: "Imprensa", to: "/press" },
+  { text: "Direitos autorais", to: "/kanban" },
+  { text: "Entre em contato", to: "/contact" },
+  { text: "Criadores de conteúdo", to: "/creators" },
+  { text: "Publicidade", to: "/publicty" },
+  { text: "Desenvolvedores", to: "/developers" },
+];
+
+const SIDEBAR_ITEMS_SECTION_6 = [
+  { text: "Termos", to: "/terms" },
+  { text: "Privacidade", to: "/privacy" },
+  { text: "Política e Segurança", to: "/policy" },
+  { text: "Como funcion o Youtube", to: "/how-youtube-works" },
+  { text: "Criadores de conteúdo", to: "/creators" },
+  { text: "Testar os novos recursos", to: "/testing" },
 ];
 
 const SIDEBAR_SUBSCRIPTIONS = [
@@ -127,7 +197,7 @@ const SIDEBAR_SUBSCRIPTIONS = [
 export function getSidebarItems() {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve([SIDEBAR_ITEMS_GROUP_1, SIDEBAR_ITEMS_GROUP_2]);
+      resolve([SIDEBAR_ITEMS_SECTION_1, SIDEBAR_ITEMS_SECTION_2, SIDEBAR_ITEMS_SECTION_3, SIDEBAR_ITEMS_SECTION_4, SIDEBAR_ITEMS_SECTION_5, SIDEBAR_ITEMS_SECTION_6]);
     }, 1000);
   });
 }
