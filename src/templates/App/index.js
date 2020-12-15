@@ -1,7 +1,7 @@
 import React from "react";
 
-import Header from "../../molecules/Header";
-import Sidebar from "../../molecules/Sidebar";
+import Header from "../../organisms/Header";
+import Sidebar from "../../organisms/Sidebar";
 import ContentArea from "../../atoms/ContentArea";
 
 export default function AppTemplate({ children }) {
