@@ -1,52 +1,45 @@
 import React, { useEffect, useState } from "react";
 
 import * as api from "../../services/sidebar";
-import SidebarItem from "../../molecules/SidebarItem";
-import { StyledSideBar, StyledSidebarList, StyledSidebarDivisor, StyledSidebarGroupTitle } from "./style";
+import Links from "../../atoms/Links";
+import SidebarSection from "../../molecules/SidebarSection";
+import { StyledSideBar, StyledSidebarList, StyledSidebarDivisor, StyledSidebarGroupTitle, StyledLinkArea, StyledText } from "./style";
 
 export default function Sidebar(props) {
   const [sidebarItems, setSidebarItems] = useState([]);
   const [subscriptions, setSubscriptions] = useState([]);
 
   useEffect(() => {
-    async function fetchSidebarItem() {
+    async function fetchData() {
       setSidebarItems(await api.getSidebarItems());
-    }
-
-    fetchSidebarItem();
-  }, []);
-
-  useEffect(() => {
-    async function fetchSubscriptions() {
       setSubscriptions(await api.getSubscriptions());
     }
 
-    fetchSubscriptions();
+    fetchData();
   }, []);
 
   return (
     <StyledSideBar id="sidebar" {...props}>
       <StyledSidebarList id="sidebar-list">
-        {(!sidebarItems || sidebarItems.length === 0) && <SidebarItem key={1} id={`sidebar-list-item-spinner`} text="Loading..." icon="spinner" />}
-        {sidebarItems.length > 0 &&
-          sidebarItems[0].map((item) => {
-            return <SidebarItem key={item.id} id={`sidebar-list-item-${item.id}`} text={item.text} icon={item.icon} />;
-          })}
+        <SidebarSection items={sidebarItems[0]} prefixId="sidebar-section-menus-first" />
         <StyledSidebarDivisor />
-
-        {(!sidebarItems || sidebarItems.length === 0) && <SidebarItem key={2} id={`sidebar-list-item-spinner`} text="Loading..." icon="spinner" />}
-        {sidebarItems.length > 0 &&
-          sidebarItems[1].map((item) => {
-            return <SidebarItem key={item.id} id={`sidebar-list-item-${item.id}`} text={item.text} icon={item.icon} />;
-          })}
+        <SidebarSection items={sidebarItems[1]} prefixId="sidebar-section-menus-second" />
         <StyledSidebarDivisor />
-
         <StyledSidebarGroupTitle>Inscrições</StyledSidebarGroupTitle>
-        {(!subscriptions || subscriptions.length === 0) && <SidebarItem key={3} id={`sidebar-subscription-spinner`} text="Loading..." icon="spinner" />}
-        {subscriptions.length > 0 &&
-          subscriptions.map((item) => {
-            return <SidebarItem key={item.id} id={`sidebar-subscription-${item.id}`} text={item.text} avatar={item.avatar} live={item.live} news={item.news} />;
-          })}
+        <SidebarSection items={subscriptions} prefixId="sidebar-section-group-subscription" />
+        <StyledSidebarDivisor />
+        <StyledSidebarGroupTitle>Mais do Youtube</StyledSidebarGroupTitle>
+        <SidebarSection items={sidebarItems[2]} prefixId="sidebar-section-menus-third" />
+        <StyledSidebarDivisor />
+        <SidebarSection items={sidebarItems[3]} prefixId="sidebar-section-menus-fourth" />
+        <StyledSidebarDivisor />
+        <StyledLinkArea>
+          <Links links={sidebarItems[4]} />
+        </StyledLinkArea>
+        <StyledLinkArea>
+          <Links links={sidebarItems[5]} />
+        </StyledLinkArea>
+        <StyledText>© 2020 Google LLC</StyledText>
       </StyledSidebarList>
     </StyledSideBar>
   );

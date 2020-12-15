@@ -32,3 +32,17 @@ export const StyledSidebarGroupTitle = styled.h3`
   padding-left: 1.4rem;
   text-transform: uppercase;
 `;
+
+export const StyledLinkArea = styled.div`
+  padding: 0.5rem 1.5rem 0.5rem 1.4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+`;
+
+export const StyledText = styled.span`
+  color: ${Colors.LINK_COLOR};
+  font-size: 13px;
+  font-weight: 400;
+  padding: 0.5rem 1.5rem 0.5rem 1.4rem;
+`;
