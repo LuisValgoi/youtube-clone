@@ -16,7 +16,7 @@ export const StyledButtonBase = styled.button`
   outline: none;
 
   &:hover {
-    background-color: ${Colors.CONTENT_AREA_BACKGROUND};
+    background-color: ${Colors.BUTTON_COLOR_WHITE_HOVER};
   }
 `;
 
