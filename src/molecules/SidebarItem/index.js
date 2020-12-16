@@ -8,7 +8,7 @@ export default function SidebarItem(props) {
 
   return (
     <StyledItem {...props}>
-      <StyledButton id={`${props.id}-button`} text={props.text} width="100%" onClick={() => history.push(`/${props.route}`)}>
+      <StyledButton id={`${props.id}-button`} text={props.text} width="100%" onClick={() => history.push(props.route)}>
         {props.icon && (
           <StyledIconArea>
             <i id={`${props.id}-wrapper-icon`} className={`fas fa-${props.icon}`}></i>

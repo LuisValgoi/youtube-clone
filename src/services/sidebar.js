@@ -1,19 +1,19 @@
 const SIDEBAR_ITEMS_SECTION_1 = [
   {
     key: "home",
-    route: "home",
+    route: "/home",
     text: "Início",
     icon: "home",
   },
   {
     key: "high",
-    route: "high",
+    route: "/high",
     text: "Em Alta",
     icon: "fire",
   },
   {
     key: "subscription",
-    route: "subscription",
+    route: "/subscription",
     text: "Inscrições",
     icon: "folder",
   },
@@ -22,31 +22,31 @@ const SIDEBAR_ITEMS_SECTION_1 = [
 const SIDEBAR_ITEMS_SECTION_2 = [
   {
     key: "library",
-    route: "library",
+    route: "/library",
     text: "Biblioteca",
     icon: "book",
   },
   {
     key: "history",
-    route: "history",
+    route: "/history",
     text: "Histórico",
     icon: "history",
   },
   {
     key: "yourVideos",
-    route: "your-videos",
+    route: "/your-videos",
     text: "Seus Vídeos",
     icon: "play",
   },
   {
     key: "watchLater",
-    route: "watch-later",
+    route: "/watch-later",
     text: "Assistir Mais Tarde",
     icon: "clock",
   },
   {
     key: "liked",
-    route: "liked",
+    route: "/liked",
     text: "Vídeos que Gostei",
     icon: "thumbs-up",
   },
@@ -55,31 +55,31 @@ const SIDEBAR_ITEMS_SECTION_2 = [
 const SIDEBAR_ITEMS_SECTION_3 = [
   {
     key: "youtubePremium",
-    route: "youtube-premium",
+    route: "/youtube-premium",
     text: "Youtube Premium",
     icon: "crown",
   },
   {
     key: "movies",
-    route: "movies",
+    route: "/movies",
     text: "Filmes",
     icon: "film",
   },
   {
     key: "games",
-    route: "games",
+    route: "/games",
     text: "Jogos",
     icon: "gamepad",
   },
   {
     key: "live",
-    route: "live",
+    route: "/live",
     text: "Ao vivo",
     icon: "satellite-dish",
   },
   {
     key: "learn",
-    route: "learn",
+    route: "/learn",
     text: "Aprender",
     icon: "lightbulb",
   },
@@ -88,25 +88,25 @@ const SIDEBAR_ITEMS_SECTION_3 = [
 const SIDEBAR_ITEMS_SECTION_4 = [
   {
     key: "settings",
-    route: "settings",
+    route: "/settings",
     text: "Configurações",
     icon: "cog",
   },
   {
     key: "complaint",
-    route: "complaint",
+    route: "/complaint",
     text: "Histórico de Denúncias",
     icon: "flag",
   },
   {
     key: "help",
-    route: "help",
+    route: "/help",
     text: "Ajuda",
     icon: "question-circle",
   },
   {
     key: "feedback",
-    route: "feedback",
+    route: "/feedback",
     text: "Enviar feedback",
     icon: "comment-alt",
   },
