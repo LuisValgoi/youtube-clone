@@ -1,13 +1,14 @@
 import React from "react";
 
 import NavBar from "../../atoms/Navbar";
-import Button from "../../atoms/Button";
 import Logo from "../../atoms/Logo";
+
+import { StyledButton } from "./style";
 
 export default function Header() {
   return (
     <NavBar id="navbar">
-      <Button id="navbar-sidebar" icon="bars" style={{ borderRadius: "50%" }} width="4.45rem" />
+      <StyledButton id="navbar-sidebar" icon="bars" />
       <Logo id="navbar-logo" href="/" src="/images/logo.png" />
     </NavBar>
   );
