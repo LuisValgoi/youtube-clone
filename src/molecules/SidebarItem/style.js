@@ -16,13 +16,13 @@ export const StyledButton = styled(ButtonBase)`
   align-content: center;
   align-items: center;
   justify-items: center;
-  padding: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   background-color: ${(props) => (props.selected ? Colors.BUTTON_COLOR_WHITE_HOVER : "auto")};
 `;
 
 export const StyledAvatar = styled.img`
+  min-width: 1.5rem;
   max-width: 1.5rem;
-  cursor: pointer;
   border-radius: 50%;
 
   &:hover {
@@ -32,14 +32,19 @@ export const StyledAvatar = styled.img`
 `;
 
 export const StyledIconArea = styled.div`
-  min-width: 1rem;
-  max-width: 1rem;
+  min-width: 1.5rem;
+  max-width: 1.5rem;
   color: ${Colors.BUTTON_COLOR_GREY};
+
+  &:hover {
+    transform: translateY(-4px);
+    transition: all 0.2s;
+  }
 `;
 
 export const StyledText = styled.span`
   color: ${Colors.BUTTON_COLOR_WHITE};
-  margin-left: 1.4rem;
+  margin-left: 1.5rem;
   flex-grow: 1;
   text-align: start;
 `;

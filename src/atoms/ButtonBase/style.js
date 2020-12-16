@@ -24,6 +24,10 @@ export const StyledWrapper = styled.div`
   display: flex;
   flex: row;
   padding: 0.5rem 1rem 0.5rem 1rem;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const StyledIconArea = styled.div`
@@ -33,5 +37,5 @@ export const StyledIconArea = styled.div`
 
 export const StyledSpan = styled.span`
   color: ${Colors.BUTTON_COLOR_WHITE};
-  margin-left: 1.4rem;
+  margin-left: 1.5rem;
 `;
