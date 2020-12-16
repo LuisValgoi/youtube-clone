@@ -9,7 +9,7 @@ export default function SidebarSection({ items, prefixId }) {
       {items &&
         items.length > 0 &&
         items.map((item) => {
-          return <SidebarItem key={item.id} id={`${prefixId}-${item.id}`} text={item.text} icon={item.icon} avatar={item.avatar} live={item.live} news={item.news} />;
+          return <SidebarItem key={item.key} id={`${prefixId}-${item.id}`} text={item.text} icon={item.icon} avatar={item.avatar} live={item.live} news={item.news} route={item.route} />;
         })}
     </>
   );

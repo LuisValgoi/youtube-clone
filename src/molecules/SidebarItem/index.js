@@ -1,11 +1,14 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 import { StyledItem, StyledAvatar, StyledText, StyledLiveArea, StyledNewsArea, StyledButton, StyledIconArea } from "./style";
 
 export default function SidebarItem(props) {
+  const history = useHistory();
+
   return (
     <StyledItem {...props}>
-      <StyledButton id={`${props.id}-button`} text={props.text} width="100%">
+      <StyledButton id={`${props.id}-button`} text={props.text} width="100%" onClick={() => history.push(`/${props.route}`)}>
         {props.icon && (
           <StyledIconArea>
             <i id={`${props.id}-wrapper-icon`} className={`fas fa-${props.icon}`}></i>

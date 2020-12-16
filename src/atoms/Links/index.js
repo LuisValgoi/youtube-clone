@@ -8,7 +8,11 @@ export default function Links({ links }) {
       {links &&
         links.length > 0 &&
         links.map((link) => {
-          return <StyledLink to={link.to}>{link.text}</StyledLink>;
+          return (
+            <StyledLink key={link.key} to={link.to}>
+              {link.text}
+            </StyledLink>
+          );
         })}
     </>
   );
