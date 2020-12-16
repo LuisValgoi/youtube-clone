@@ -17,6 +17,7 @@ export const StyledButton = styled(ButtonBase)`
   align-items: center;
   justify-items: center;
   padding: 0.5rem 1.4rem 0.5rem 1.4rem;
+  background-color: ${(props) => (props.selected ? Colors.BUTTON_COLOR_WHITE_HOVER : "auto")};
 `;
 
 export const StyledAvatar = styled.img`
