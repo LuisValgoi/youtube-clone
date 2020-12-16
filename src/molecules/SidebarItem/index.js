@@ -1,8 +1,9 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { useSidebarItem } from "../../contexts/sidebarItem";
+import PropTypes from "prop-types";
 
 import { StyledItem, StyledAvatar, StyledText, StyledLiveArea, StyledNewsArea, StyledButton, StyledIconArea } from "./style";
+import { useSidebarItem } from "../../contexts/sidebarItem";
 
 export default function SidebarItem(props) {
   const history = useHistory();
@@ -40,3 +41,13 @@ export default function SidebarItem(props) {
     </StyledItem>
   );
 }
+
+SidebarItem.propTypes = {
+  id: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  route: PropTypes.string,
+  icon: PropTypes.string,
+  avatar: PropTypes.string,
+  live: PropTypes.bool,
+  news: PropTypes.bool,
+};

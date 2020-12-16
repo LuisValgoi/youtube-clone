@@ -1,4 +1,5 @@
 import React from "react";
+
 import { StyledArea, StyledContent } from "./style";
 
 export default function ContentArea(props) {

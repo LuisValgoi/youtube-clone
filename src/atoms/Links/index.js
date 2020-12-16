@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { StyledLink } from "./style";
 
@@ -17,3 +18,7 @@ export default function Links({ links }) {
     </>
   );
 }
+
+Links.propTypes = {
+  links: PropTypes.array,
+};

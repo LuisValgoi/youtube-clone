@@ -4,7 +4,7 @@ import * as service from "../services/sidebar";
 
 const SidebarContext = createContext({ subscriptions: [], sidebarItems: [] });
 
-export const SidebarProvider = ({ children, route }) => {
+export const SidebarProvider = ({ children }) => {
   const [subscriptions, setSubscriptions] = useState([]);
   const [sidebarItems, setSidebarItems] = useState([]);
 

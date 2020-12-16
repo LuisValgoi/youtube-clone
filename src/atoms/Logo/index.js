@@ -1,11 +1,16 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { StyledLogo } from "./style";
 
 export default function Logo(props) {
   return (
     <a href={props.href}>
-      <StyledLogo {...props}>{props.children}</StyledLogo>
+      <StyledLogo {...props} />
     </a>
   );
 }
+
+Logo.propTypes = {
+  href: PropTypes.string,
+};

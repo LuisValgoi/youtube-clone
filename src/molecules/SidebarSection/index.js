@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import SidebarItem from "../../molecules/SidebarItem";
 import { SidebarItemProvider } from "../../contexts/sidebarItem";
@@ -19,3 +20,8 @@ export default function SidebarSection({ items, prefixId }) {
     </>
   );
 }
+
+SidebarSection.propTypes = {
+  items: PropTypes.array,
+  prefixId: PropTypes.string.isRequired,
+};

@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import { StyledButtonBase, StyledWrapper, StyledSpan, StyledIconArea } from "../ButtonBase/style";
 
 export default function Button(props) {
@@ -15,3 +17,9 @@ export default function Button(props) {
     </StyledButtonBase>
   );
 }
+
+Button.propTypes = {
+  id: PropTypes.string.isRequired,
+  text: PropTypes.string,
+  icon: PropTypes.string,
+};
