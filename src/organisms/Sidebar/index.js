@@ -1,22 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-import * as api from "../../services/sidebar";
 import Links from "../../atoms/Links";
 import SidebarSection from "../../molecules/SidebarSection";
 import { StyledSideBar, StyledSidebarList, StyledSidebarDivisor, StyledSidebarGroupTitle, StyledLinkArea, StyledText } from "./style";
+import { useSidebar } from "../../contexts/sidebar";
 
 export default function Sidebar(props) {
-  const [sidebarItems, setSidebarItems] = useState([]);
-  const [subscriptions, setSubscriptions] = useState([]);
-
-  useEffect(() => {
-    async function fetchData() {
-      setSidebarItems(await api.getSidebarItems());
-      setSubscriptions(await api.getSubscriptions());
-    }
-
-    fetchData();
-  }, []);
+  const { sidebarItems, subscriptions } = useSidebar();
 
   return (
     <StyledSideBar id="sidebar" {...props}>

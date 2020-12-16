@@ -1,6 +1,7 @@
 import React from "react";
 
 import SidebarItem from "../../molecules/SidebarItem";
+import { SidebarItemProvider } from "../../contexts/sidebarItem";
 
 export default function SidebarSection({ items, prefixId }) {
   return (
@@ -9,7 +10,11 @@ export default function SidebarSection({ items, prefixId }) {
       {items &&
         items.length > 0 &&
         items.map((item) => {
-          return <SidebarItem key={item.key} id={`${prefixId}-${item.id}`} text={item.text} icon={item.icon} avatar={item.avatar} live={item.live} news={item.news} route={item.route} />;
+          return (
+            <SidebarItemProvider key={item.key} route={item.route}>
+              <SidebarItem key={item.key} id={`${prefixId}-${item.id}`} text={item.text} icon={item.icon} avatar={item.avatar} live={item.live} news={item.news} route={item.route} />
+            </SidebarItemProvider>
+          );
         })}
     </>
   );
