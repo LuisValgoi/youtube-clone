@@ -12,8 +12,8 @@ export const CONSTANTS = {
     path: "/feed/subscriptions",
   },
   LIBRARY: {
-    key: "feed/library",
-    path: "/library",
+    key: "library",
+    path: "/feed/library",
   },
   HISTORY: {
     key: "history",
