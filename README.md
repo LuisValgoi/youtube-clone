@@ -31,15 +31,11 @@ We should be using the `transform` and `transition` css properties;
 ```js
   npm install single-spa
   npm install single-spa-react
-  npm install --save-dev webpack
-  npm install --save-dev webpack-cli
-  npm install --save-dev webpack-dev-server
+
   npm install --save-dev clean-webpack-plugin
-  npm install --save-dev babel-loader
-  npm install --save-dev @babel/core
-  npm install --save-dev @babel/preset-react
   npm install --save-dev css-loader
   npm install --save-dev file-loader
   npm install --save-dev html-loader
   npm install --save-dev style-loader
+  npm install --save-dev styled-components
 ```
