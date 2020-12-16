@@ -1,19 +1,19 @@
 const SIDEBAR_ITEMS_SECTION_1 = [
   {
     key: "home",
-    route: "/home",
+    route: "/",
     text: "Início",
     icon: "home",
   },
   {
-    key: "high",
-    route: "/high",
+    key: "trending",
+    route: "/feed/trending",
     text: "Em Alta",
     icon: "fire",
   },
   {
-    key: "subscription",
-    route: "/subscription",
+    key: "subscriptions",
+    route: "/feed/subscriptions",
     text: "Inscrições",
     icon: "folder",
   },
@@ -22,31 +22,31 @@ const SIDEBAR_ITEMS_SECTION_1 = [
 const SIDEBAR_ITEMS_SECTION_2 = [
   {
     key: "library",
-    route: "/library",
+    route: "/feed/library",
     text: "Biblioteca",
     icon: "book",
   },
   {
     key: "history",
-    route: "/history",
+    route: "/feed/history",
     text: "Histórico",
     icon: "history",
   },
   {
     key: "yourVideos",
-    route: "/your-videos",
+    route: "/videos/yours",
     text: "Seus Vídeos",
     icon: "play",
   },
   {
     key: "watchLater",
-    route: "/watch-later",
+    route: "/playlist?list=WL",
     text: "Assistir Mais Tarde",
     icon: "clock",
   },
   {
     key: "liked",
-    route: "/liked",
+    route: "/playlist?list=LL",
     text: "Vídeos que Gostei",
     icon: "thumbs-up",
   },
@@ -55,7 +55,7 @@ const SIDEBAR_ITEMS_SECTION_2 = [
 const SIDEBAR_ITEMS_SECTION_3 = [
   {
     key: "youtubePremium",
-    route: "/youtube-premium",
+    route: "/premium",
     text: "Youtube Premium",
     icon: "crown",
   },
