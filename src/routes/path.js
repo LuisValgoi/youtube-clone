@@ -35,4 +35,8 @@ export const CONSTANTS = {
     key: "premium",
     path: "/premium",
   },
+  FORBIDDEN: {
+    key: "forbidden",
+    path: "/forbidden",
+  },
 };
