@@ -5,6 +5,12 @@ const SIDEBAR_ITEMS_SECTION_1_NO_ACCESS = [
     text: "Login",
     icon: "user-circle",
   },
+  {
+    key: "trending",
+    route: "/feed/trending",
+    text: "Em Alta",
+    icon: "fire",
+  },
 ];
 
 const SIDEBAR_ITEMS_SECTION_1 = [

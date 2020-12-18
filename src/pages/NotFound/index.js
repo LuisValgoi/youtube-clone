@@ -1,6 +1,6 @@
 import React from "react";
 
-import Fallback from "./Fallback";
+import Fallback from "../Fallback";
 import { CONSTANTS as Constants } from "../../routes/path";
 
 export default function NotFound() {
