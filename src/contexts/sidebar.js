@@ -1,21 +1,23 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
 import * as service from "../services/sidebar";
+import { useAuth } from './auth';
 
 const SidebarContext = createContext({ subscriptions: [], sidebarItems: [] });
 
 export const SidebarProvider = ({ children }) => {
   const [subscriptions, setSubscriptions] = useState([]);
   const [sidebarItems, setSidebarItems] = useState([]);
+  const { signed } = useAuth();
 
   useEffect(() => {
     async function fetchData() {
-      setSidebarItems(await service.getSidebarItems());
+      setSidebarItems(signed ? await service.getSidebarItems() : await service.getSidebarNoAccessItems());
       setSubscriptions(await service.getSubscriptions());
     }
 
     fetchData();
-  }, []);
+  }, [signed]);
 
   return <SidebarContext.Provider value={{ subscriptions, sidebarItems }}>{children}</SidebarContext.Provider>;
 };

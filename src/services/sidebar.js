@@ -1,3 +1,12 @@
+const SIDEBAR_ITEMS_SECTION_1_NO_ACCESS = [
+  {
+    key: "login",
+    route: "/login",
+    text: "Login",
+    icon: "user-circle",
+  },
+];
+
 const SIDEBAR_ITEMS_SECTION_1 = [
   {
     key: "home",
@@ -209,6 +218,14 @@ const SIDEBAR_SUBSCRIPTIONS = [
     news: true,
   },
 ];
+
+export function getSidebarNoAccessItems() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve([SIDEBAR_ITEMS_SECTION_1_NO_ACCESS, [], SIDEBAR_ITEMS_SECTION_3, SIDEBAR_ITEMS_SECTION_4, SIDEBAR_ITEMS_SECTION_5, SIDEBAR_ITEMS_SECTION_6]);
+    }, 1000);
+  });
+}
 
 export function getSidebarItems() {
   return new Promise((resolve) => {
