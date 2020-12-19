@@ -10,7 +10,7 @@ The app should be composed of a sidebar and the routing for each page.
 
 # Stacks & New Concepts
 
-- [x]: We shuold be using the `atomic-design-pattern` since we need to customize and clone the app again;
+- [x] We shuold be using the `atomic-design-pattern` since we need to customize and clone the app again;
 
 - [ ]: We should be using the `Single SPA` as the `microfrontends` type of architecture;
 
